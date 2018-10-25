@@ -1,0 +1,12 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    @include('partials.admin.brand-logo')
+    <div class="sidebar">
+        @include('partials.admin.user-panel')
+        @include('partials.admin.sidebar-search')
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                @include('partials.admin.sidebar-menu')
+            </ul>
+        </nav>
+    </div>
+</aside>

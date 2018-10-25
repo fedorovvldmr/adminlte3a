@@ -1,0 +1,35 @@
+{
+    "name": "sgtfitz/adminlte-templates",
+    "description": "AdminLTE3 (Bootstrap 4) templates for InfyOm Laravel Generator",
+    "keywords": [
+        "sgt_fitz",
+        "laravel",
+        "generator",
+        "adminlte3",
+        "templates",
+        "bootstrap"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maurice Fitzpatrick",
+            "email": "sgt_fitz@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SgtFitz\\AdminLTETemplates\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\SgtFitz\\AdminLTETemplates\\AdminLTETemplatesServiceProvider"
+            ]
+        }
+    }
+}

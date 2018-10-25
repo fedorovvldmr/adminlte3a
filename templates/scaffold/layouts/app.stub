@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ config('app.name', 'Laravel') }} - @yield('page-title')</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  @yield('styles')
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to to the body tag
+to get the desired effect
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  @include('partials.admin.main-header')
+  @include('partials.admin.main-sidebar')
+  @include('partials.admin.content-wrapper')
+  @include('partials.admin.main-footer')
+  @include('partials.admin.control-sidebar')
+</div>
+@yield('scripts')
+<script>
+    $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
+</script>
+</body>
+</html>

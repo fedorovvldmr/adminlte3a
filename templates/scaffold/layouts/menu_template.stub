@@ -1,0 +1,6 @@
+<li class="nav-item {{ Request::is('$MODEL_NAME_PLURAL_CAMEL$*') ? 'active' : '' }}">
+    <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="nav-link">
+        <i class="nav-icon fa fa-dashboard"></i>
+        <span>$MODEL_NAME_PLURAL_HUMAN$</span>
+    </a>
+</li>
